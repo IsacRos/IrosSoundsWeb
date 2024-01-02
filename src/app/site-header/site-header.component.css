@@ -1,0 +1,31 @@
+.nav-link {
+    color: white;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    position: relative;
+}
+.nav-link:hover {
+    color:orange;
+}
+
+.nav-link::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: orange;
+    transition: width 0.3s ease-out;
+}
+
+.nav-link:hover::before {
+    width: 100%;
+}
+
+.navbar {
+    top: 0;
+    z-index: 1000;
+    position: absolute;
+}
+
