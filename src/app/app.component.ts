@@ -1,9 +1,10 @@
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { SiteHeaderComponent } from './site-header/site-header.component';
 import { BackgroundVideoComponent } from './background-video/background-video.component';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { HomepageContentComponent } from './homepage-content/homepage-content.component';
 
 @Component({
   selector: 'app-root',
@@ -13,6 +14,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     RouterOutlet, 
     SiteHeaderComponent,
     BackgroundVideoComponent,
+    HomepageContentComponent,
     FontAwesomeModule
   ],
   templateUrl: './app.component.html',
